@@ -5,12 +5,14 @@ import org.apache.spark.sql.DataFrame
 case class EtlDefinition(
   sourceDF: DataFrame,
   transform: (DataFrame => DataFrame),
-  write: (DataFrame => Unit),
-  metadata: scala.collection.mutable.Map[String, Any] = scala.collection.mutable.Map[String, Any]()
+  write: (DataFrame => Unit)
 ) {
 
   def process(): Unit = {
     write(sourceDF.transform(transform))
   }
 
+  def test(): Unit = {
+    sourceDF.transform(transform)
+  }
 }
