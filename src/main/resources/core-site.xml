@@ -4,7 +4,6 @@
 <property><name>hadoop.proxyuser.hue.groups</name><value>*</value></property>
 <property><name>hadoop.http.staticuser.user</name><value>root</value></property>
 <property><name>hadoop.proxyuser.hue.hosts</name><value>*</value></property>
-<property><name>fs.defaultFS</name><value>hdfs://dev2:8020</value></property>
 <property><name>hadoop.proxyuser.hue.groups</name><value>*</value></property>
 <property><name>hadoop.http.staticuser.user</name><value>root</value></property>
 </configuration>
