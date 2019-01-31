@@ -4,10 +4,10 @@ src_managed/
 project/boot/
 tmp/
 
-#metastore_db/
-#spark_warehouse/
-#derby.log
-
+metastore_db/
+spark_warehouse/
+derby.log
+logs/
 
 .idea
 *.iml
